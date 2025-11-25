@@ -1,0 +1,754 @@
+{
+  "users": [
+    {
+      "id": "user-1",
+      "username": "sales1",
+      "password": "$2a$10$X3ynF7.5HqK5GY7w3xKyY.3tYkV4yGgZfQjYmY0WJKgG1ZK4gHKGS",
+      "role": "sales",
+      "email": "sales1@company.com",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "user-2",
+      "username": "integrator1",
+      "password": "$2a$10$X3ynF7.5HqK5GY7w3xKyY.3tYkV4yGgZfQjYmY0WJKgG1ZK4gHKGS",
+      "role": "integration",
+      "email": "integrator1@company.com",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "user-3",
+      "username": "partner1",
+      "password": "$2a$10$X3ynF7.5HqK5GY7w3xKyY.3tYkV4yGgZfQjYmY0WJKgG1ZK4gHKGS",
+      "role": "partner",
+      "email": "partner1@company.com",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "user-4",
+      "username": "viewer1",
+      "password": "$2a$10$X3ynF7.5HqK5GY7w3xKyY.3tYkV4yGgZfQjYmY0WJKgG1ZK4gHKGS",
+      "role": "viewer",
+      "email": "viewer1@company.com",
+      "createdAt": "2024-01-15T10:00:00Z"
+    }
+  ],
+  "portfolioServices": [
+    {
+      "id": "svc-1",
+      "name": "Cloud Migration Services",
+      "category": "Cloud Transformation",
+      "description": "End-to-end cloud migration and modernization services for enterprise workloads",
+      "techStack": ["AWS", "Azure", "Kubernetes", "Terraform", "Docker"],
+      "region": ["North America", "Europe", "APAC"],
+      "partnerSpoc": "John Anderson",
+      "collateralUrls": [
+        "https://portal.example.com/collateral/cloud-migration-overview.pdf",
+        "https://portal.example.com/collateral/cloud-migration-pricing.pdf"
+      ],
+      "useCases": [
+        "Legacy application modernization",
+        "Lift-and-shift migrations",
+        "Cloud-native refactoring",
+        "Multi-cloud strategy"
+      ],
+      "caseStudies": [
+        {
+          "id": "cs-1",
+          "title": "Global Bank Cloud Migration",
+          "client": "Major Financial Institution",
+          "industry": "Banking",
+          "summary": "Migrated 200+ applications to cloud with zero downtime",
+          "outcomes": [
+            "40% cost reduction",
+            "99.99% uptime achieved",
+            "3-month migration timeline"
+          ],
+          "techUsed": ["AWS", "Kubernetes", "Terraform"],
+          "duration": "3 months"
+        }
+      ],
+      "createdAt": "2024-01-10T09:00:00Z",
+      "updatedAt": "2024-03-15T14:30:00Z"
+    },
+    {
+      "id": "svc-2",
+      "name": "AI/ML Engineering",
+      "category": "Data & AI",
+      "description": "Custom AI/ML solutions including model development, training, and deployment",
+      "techStack": ["Python", "TensorFlow", "PyTorch", "Kubernetes", "MLflow"],
+      "region": ["North America", "Europe"],
+      "partnerSpoc": "Sarah Chen",
+      "collateralUrls": [
+        "https://portal.example.com/collateral/aiml-capabilities.pdf"
+      ],
+      "useCases": [
+        "Predictive analytics",
+        "Computer vision solutions",
+        "NLP and chatbots",
+        "Recommendation engines"
+      ],
+      "caseStudies": [
+        {
+          "id": "cs-2",
+          "title": "Retail Demand Forecasting",
+          "client": "Global Retailer",
+          "industry": "Retail",
+          "summary": "Built ML models to forecast demand across 500+ stores",
+          "outcomes": [
+            "25% reduction in inventory costs",
+            "15% increase in product availability",
+            "Real-time forecasting"
+          ],
+          "techUsed": ["Python", "TensorFlow", "Kubernetes"],
+          "duration": "4 months"
+        }
+      ],
+      "createdAt": "2024-01-12T09:00:00Z",
+      "updatedAt": "2024-03-20T11:00:00Z"
+    },
+    {
+      "id": "svc-3",
+      "name": "DevOps Automation",
+      "category": "Platform Engineering",
+      "description": "CI/CD pipelines, infrastructure automation, and DevOps transformation",
+      "techStack": ["Jenkins", "GitLab CI", "Terraform", "Ansible", "Kubernetes"],
+      "region": ["North America", "Europe", "APAC", "LATAM"],
+      "partnerSpoc": "Michael Rodriguez",
+      "collateralUrls": [
+        "https://portal.example.com/collateral/devops-services.pdf"
+      ],
+      "useCases": [
+        "CI/CD pipeline setup",
+        "Infrastructure as Code",
+        "Container orchestration",
+        "Monitoring and observability"
+      ],
+      "caseStudies": [],
+      "createdAt": "2024-01-08T09:00:00Z",
+      "updatedAt": "2024-02-28T16:00:00Z"
+    },
+    {
+      "id": "svc-4",
+      "name": "Cybersecurity Services",
+      "category": "Security",
+      "description": "Comprehensive security assessment, implementation, and monitoring services",
+      "techStack": ["Splunk", "CrowdStrike", "Okta", "HashiCorp Vault", "AWS Security"],
+      "region": ["North America", "Europe"],
+      "partnerSpoc": "Emily Watson",
+      "collateralUrls": [
+        "https://portal.example.com/collateral/security-overview.pdf",
+        "https://portal.example.com/collateral/compliance-framework.pdf"
+      ],
+      "useCases": [
+        "Security audits",
+        "Penetration testing",
+        "Identity and access management",
+        "SIEM implementation"
+      ],
+      "caseStudies": [
+        {
+          "id": "cs-3",
+          "title": "Healthcare Security Overhaul",
+          "client": "Regional Healthcare Provider",
+          "industry": "Healthcare",
+          "summary": "Implemented comprehensive security framework for HIPAA compliance",
+          "outcomes": [
+            "100% HIPAA compliance achieved",
+            "Zero security incidents in 12 months",
+            "Reduced security response time by 60%"
+          ],
+          "techUsed": ["Splunk", "Okta", "AWS Security"],
+          "duration": "6 months"
+        }
+      ],
+      "createdAt": "2024-01-20T09:00:00Z",
+      "updatedAt": "2024-03-25T10:00:00Z"
+    }
+  ],
+  "techCredentials": [
+    {
+      "id": "cred-1",
+      "technology": "AWS",
+      "certificationLevel": "Advanced Partner",
+      "provider": "Amazon Web Services",
+      "validUntil": "2025-12-31T23:59:59Z",
+      "credentialUrl": "https://partners.aws.com/credential/12345"
+    },
+    {
+      "id": "cred-2",
+      "technology": "Microsoft Azure",
+      "certificationLevel": "Gold Partner",
+      "provider": "Microsoft",
+      "validUntil": "2025-06-30T23:59:59Z",
+      "credentialUrl": "https://partner.microsoft.com/credential/67890"
+    },
+    {
+      "id": "cred-3",
+      "technology": "Kubernetes",
+      "certificationLevel": "Certified Service Provider",
+      "provider": "CNCF",
+      "validUntil": "2025-09-30T23:59:59Z",
+      "credentialUrl": "https://cncf.io/credential/kscp-456"
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill-1",
+      "name": "Cloud Architecture",
+      "category": "Cloud",
+      "level": "expert",
+      "practitioners": 45,
+      "lastUpdated": "2024-Q1"
+    },
+    {
+      "id": "skill-2",
+      "name": "Kubernetes Administration",
+      "category": "Platform",
+      "level": "advanced",
+      "practitioners": 38,
+      "lastUpdated": "2024-Q1"
+    },
+    {
+      "id": "skill-3",
+      "name": "Python Development",
+      "category": "Programming",
+      "level": "expert",
+      "practitioners": 52,
+      "lastUpdated": "2024-Q1"
+    },
+    {
+      "id": "skill-4",
+      "name": "Machine Learning",
+      "category": "AI/ML",
+      "level": "advanced",
+      "practitioners": 28,
+      "lastUpdated": "2024-Q1"
+    },
+    {
+      "id": "skill-5",
+      "name": "React Development",
+      "category": "Frontend",
+      "level": "expert",
+      "practitioners": 41,
+      "lastUpdated": "2024-Q1"
+    },
+    {
+      "id": "skill-6",
+      "name": "Terraform",
+      "category": "Infrastructure",
+      "level": "advanced",
+      "practitioners": 35,
+      "lastUpdated": "2024-Q1"
+    },
+    {
+      "id": "skill-7",
+      "name": "Security Architecture",
+      "category": "Security",
+      "level": "expert",
+      "practitioners": 22,
+      "lastUpdated": "2023-Q4"
+    },
+    {
+      "id": "skill-8",
+      "name": "DevOps Practices",
+      "category": "Platform",
+      "level": "expert",
+      "practitioners": 48,
+      "lastUpdated": "2024-Q1"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert-1",
+      "name": "AWS Solutions Architect Professional",
+      "provider": "Amazon Web Services",
+      "level": "Professional",
+      "validUntil": "2025-12-31T23:59:59Z",
+      "holdersCount": 15,
+      "lastRefreshQuarter": "2024-Q1",
+      "nextRefreshDue": "2024-Q2",
+      "status": "active"
+    },
+    {
+      "id": "cert-2",
+      "name": "Certified Kubernetes Administrator",
+      "provider": "CNCF",
+      "level": "Professional",
+      "validUntil": "2025-06-30T23:59:59Z",
+      "holdersCount": 22,
+      "lastRefreshQuarter": "2023-Q4",
+      "nextRefreshDue": "2024-Q2",
+      "status": "active"
+    },
+    {
+      "id": "cert-3",
+      "name": "Google Cloud Professional Architect",
+      "provider": "Google Cloud",
+      "level": "Professional",
+      "validUntil": "2024-09-30T23:59:59Z",
+      "holdersCount": 8,
+      "lastRefreshQuarter": "2023-Q3",
+      "nextRefreshDue": "2024-Q1",
+      "status": "expiring"
+    },
+    {
+      "id": "cert-4",
+      "name": "Certified Ethical Hacker",
+      "provider": "EC-Council",
+      "level": "Professional",
+      "validUntil": "2026-03-31T23:59:59Z",
+      "holdersCount": 12,
+      "lastRefreshQuarter": "2024-Q1",
+      "nextRefreshDue": "2024-Q3",
+      "status": "active"
+    },
+    {
+      "id": "cert-5",
+      "name": "Azure Solutions Architect Expert",
+      "provider": "Microsoft",
+      "level": "Expert",
+      "validUntil": "2025-08-31T23:59:59Z",
+      "holdersCount": 18,
+      "lastRefreshQuarter": "2023-Q4",
+      "nextRefreshDue": "2024-Q2",
+      "status": "active"
+    }
+  ],
+  "refreshRequests": [],
+  "engagementRequests": [
+    {
+      "id": "eng-1",
+      "requestType": "consultant",
+      "title": "Cloud Migration Assessment for Healthcare Client",
+      "description": "Need experienced cloud consultant to assess current infrastructure and provide migration roadmap",
+      "requiredSkills": ["AWS", "Cloud Architecture", "Healthcare Compliance"],
+      "region": "North America",
+      "priority": "high",
+      "requestedBy": "sales1",
+      "requestedAt": "2024-03-20T09:00:00Z",
+      "status": "assigned",
+      "assignedSpoc": "John Anderson",
+      "assignedAt": "2024-03-20T10:30:00Z",
+      "slaDeadline": "2024-03-27T17:00:00Z",
+      "estimatedHours": 40,
+      "auditTrail": [
+        {
+          "timestamp": "2024-03-20T09:00:00Z",
+          "action": "created",
+          "user": "sales1",
+          "details": "Engagement request submitted"
+        },
+        {
+          "timestamp": "2024-03-20T09:05:00Z",
+          "action": "routing",
+          "user": "system",
+          "details": "Auto-routing based on region and skills"
+        },
+        {
+          "timestamp": "2024-03-20T10:30:00Z",
+          "action": "assigned",
+          "user": "system",
+          "details": "Assigned to John Anderson"
+        }
+      ]
+    },
+    {
+      "id": "eng-2",
+      "requestType": "sme",
+      "title": "Machine Learning SME for Retail PoC",
+      "description": "Need ML expert to guide proof of concept for demand forecasting solution",
+      "requiredSkills": ["Machine Learning", "Python", "TensorFlow"],
+      "region": "Europe",
+      "priority": "medium",
+      "requestedBy": "sales1",
+      "requestedAt": "2024-03-22T14:00:00Z",
+      "status": "routing",
+      "slaDeadline": "2024-03-29T17:00:00Z",
+      "estimatedHours": 20,
+      "auditTrail": [
+        {
+          "timestamp": "2024-03-22T14:00:00Z",
+          "action": "created",
+          "user": "sales1",
+          "details": "Engagement request submitted"
+        },
+        {
+          "timestamp": "2024-03-22T14:05:00Z",
+          "action": "routing",
+          "user": "system",
+          "details": "Auto-routing in progress"
+        }
+      ]
+    }
+  ],
+  "incubationRequests": [
+    {
+      "id": "incub-1",
+      "name": "AI-Powered Code Review Assistant",
+      "description": "Automated code review tool using LLMs to detect bugs and suggest improvements",
+      "submittedBy": "integrator1",
+      "submittedAt": "2024-02-01T10:00:00Z",
+      "status": "poc",
+      "region": "North America",
+      "techStack": ["Python", "OpenAI API", "Git", "Docker"],
+      "businessValue": "Reduce code review time by 50%, improve code quality",
+      "labAssets": ["lab-env-001", "gpu-cluster-02"],
+      "estimatedCost": 50000,
+      "actualCost": 35000,
+      "timeline": {
+        "requestedDate": "2024-02-01T10:00:00Z",
+        "designStartDate": "2024-02-05T09:00:00Z",
+        "pocStartDate": "2024-02-15T09:00:00Z"
+      },
+      "statusHistory": [
+        {
+          "from": "requested",
+          "to": "design",
+          "timestamp": "2024-02-05T09:00:00Z",
+          "changedBy": "partner1",
+          "notes": "Design phase approved"
+        },
+        {
+          "from": "design",
+          "to": "poc",
+          "timestamp": "2024-02-15T09:00:00Z",
+          "changedBy": "partner1",
+          "notes": "PoC development started"
+        }
+      ]
+    },
+    {
+      "id": "incub-2",
+      "name": "Multi-Cloud Cost Optimizer",
+      "description": "Tool to analyze and optimize costs across AWS, Azure, and GCP",
+      "submittedBy": "integrator1",
+      "submittedAt": "2024-03-01T10:00:00Z",
+      "status": "design",
+      "region": "Global",
+      "techStack": ["Python", "AWS SDK", "Azure SDK", "GCP SDK", "React"],
+      "businessValue": "Help clients save 20-30% on cloud costs",
+      "labAssets": ["lab-env-003"],
+      "estimatedCost": 75000,
+      "timeline": {
+        "requestedDate": "2024-03-01T10:00:00Z",
+        "designStartDate": "2024-03-05T09:00:00Z"
+      },
+      "statusHistory": [
+        {
+          "from": "requested",
+          "to": "design",
+          "timestamp": "2024-03-05T09:00:00Z",
+          "changedBy": "partner1",
+          "notes": "Approved for design phase"
+        }
+      ]
+    },
+    {
+      "id": "incub-3",
+      "name": "Kubernetes Security Scanner",
+      "description": "Automated security scanning tool for Kubernetes clusters",
+      "submittedBy": "integrator1",
+      "submittedAt": "2024-01-15T10:00:00Z",
+      "status": "ready",
+      "region": "Global",
+      "techStack": ["Go", "Kubernetes", "Docker"],
+      "businessValue": "Provide security assessment as value-add service",
+      "labAssets": ["k8s-cluster-01", "k8s-cluster-02"],
+      "estimatedCost": 40000,
+      "actualCost": 42000,
+      "timeline": {
+        "requestedDate": "2024-01-15T10:00:00Z",
+        "designStartDate": "2024-01-20T09:00:00Z",
+        "pocStartDate": "2024-02-01T09:00:00Z",
+        "offerizeDate": "2024-02-20T09:00:00Z",
+        "readyDate": "2024-03-10T09:00:00Z"
+      },
+      "statusHistory": [
+        {
+          "from": "requested",
+          "to": "design",
+          "timestamp": "2024-01-20T09:00:00Z",
+          "changedBy": "partner1"
+        },
+        {
+          "from": "design",
+          "to": "poc",
+          "timestamp": "2024-02-01T09:00:00Z",
+          "changedBy": "partner1"
+        },
+        {
+          "from": "poc",
+          "to": "offerize",
+          "timestamp": "2024-02-20T09:00:00Z",
+          "changedBy": "partner1"
+        },
+        {
+          "from": "offerize",
+          "to": "ready",
+          "timestamp": "2024-03-10T09:00:00Z",
+          "changedBy": "partner1",
+          "notes": "Ready for market launch"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "name": "Global Bank Digital Transformation",
+      "client": "MegaBank International",
+      "region": "North America",
+      "status": "active",
+      "startDate": "2024-01-15T00:00:00Z",
+      "projectManager": "John Anderson",
+      "kpis": {
+        "uptimePercent": 99.95,
+        "incidentResponseTimeHours": 1.2,
+        "rot": 0.15,
+        "firstTimeAcceptanceRate": 0.92,
+        "changeFailureRate": 0.05,
+        "deploymentFrequency": 24,
+        "meanTimeToRecovery": 0.8
+      },
+      "reports": [
+        {
+          "id": "rep-1",
+          "projectId": "proj-1",
+          "reportType": "monthly",
+          "title": "February 2024 Status Report",
+          "period": "2024-02",
+          "generatedAt": "2024-03-01T09:00:00Z",
+          "generatedBy": "John Anderson",
+          "summary": "Project on track. Completed phase 1 migration with zero incidents.",
+          "kpiSnapshot": {
+            "uptimePercent": 99.98,
+            "incidentResponseTimeHours": 1.0,
+            "rot": 0.12,
+            "firstTimeAcceptanceRate": 0.95,
+            "changeFailureRate": 0.03,
+            "deploymentFrequency": 28,
+            "meanTimeToRecovery": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "proj-2",
+      "name": "Retail AI Analytics Platform",
+      "client": "ShopMart Corp",
+      "region": "Europe",
+      "status": "active",
+      "startDate": "2024-02-01T00:00:00Z",
+      "projectManager": "Sarah Chen",
+      "kpis": {
+        "uptimePercent": 99.90,
+        "incidentResponseTimeHours": 2.0,
+        "rot": 0.20,
+        "firstTimeAcceptanceRate": 0.88,
+        "changeFailureRate": 0.08,
+        "deploymentFrequency": 16,
+        "meanTimeToRecovery": 1.5
+      },
+      "reports": [
+        {
+          "id": "rep-2",
+          "projectId": "proj-2",
+          "reportType": "monthly",
+          "title": "February 2024 Status Report",
+          "period": "2024-02",
+          "generatedAt": "2024-03-01T09:00:00Z",
+          "generatedBy": "Sarah Chen",
+          "summary": "ML model training completed. Starting deployment phase.",
+          "kpiSnapshot": {
+            "uptimePercent": 99.92,
+            "incidentResponseTimeHours": 1.8,
+            "rot": 0.18,
+            "firstTimeAcceptanceRate": 0.90,
+            "changeFailureRate": 0.07,
+            "deploymentFrequency": 18,
+            "meanTimeToRecovery": 1.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "proj-3",
+      "name": "Healthcare Security Modernization",
+      "client": "HealthCare Plus",
+      "region": "North America",
+      "status": "active",
+      "startDate": "2024-01-10T00:00:00Z",
+      "projectManager": "Emily Watson",
+      "kpis": {
+        "uptimePercent": 99.99,
+        "incidentResponseTimeHours": 0.5,
+        "rot": 0.10,
+        "firstTimeAcceptanceRate": 0.96,
+        "changeFailureRate": 0.02,
+        "deploymentFrequency": 32,
+        "meanTimeToRecovery": 0.3
+      },
+      "reports": []
+    },
+    {
+      "id": "proj-4",
+      "name": "APAC E-Commerce Platform",
+      "client": "AsiaBuy Ltd",
+      "region": "APAC",
+      "status": "planning",
+      "startDate": "2024-04-01T00:00:00Z",
+      "projectManager": "Michael Rodriguez",
+      "kpis": {
+        "uptimePercent": 0,
+        "incidentResponseTimeHours": 0,
+        "rot": 0,
+        "firstTimeAcceptanceRate": 0,
+        "changeFailureRate": 0,
+        "deploymentFrequency": 0,
+        "meanTimeToRecovery": 0
+      },
+      "reports": []
+    },
+    {
+      "id": "proj-5",
+      "name": "Legacy System Modernization",
+      "client": "OldTech Industries",
+      "region": "Europe",
+      "status": "completed",
+      "startDate": "2023-10-01T00:00:00Z",
+      "endDate": "2024-02-28T00:00:00Z",
+      "projectManager": "John Anderson",
+      "kpis": {
+        "uptimePercent": 99.85,
+        "incidentResponseTimeHours": 2.5,
+        "rot": 0.25,
+        "firstTimeAcceptanceRate": 0.85,
+        "changeFailureRate": 0.10,
+        "deploymentFrequency": 12,
+        "meanTimeToRecovery": 2.0
+      },
+      "reports": [
+        {
+          "id": "rep-3",
+          "projectId": "proj-5",
+          "reportType": "quarterly",
+          "title": "Q4 2023 Status Report",
+          "period": "2023-Q4",
+          "generatedAt": "2024-01-05T09:00:00Z",
+          "generatedBy": "John Anderson",
+          "summary": "Migration 75% complete. Minor performance issues resolved.",
+          "kpiSnapshot": {
+            "uptimePercent": 99.80,
+            "incidentResponseTimeHours": 3.0,
+            "rot": 0.28,
+            "firstTimeAcceptanceRate": 0.82,
+            "changeFailureRate": 0.12,
+            "deploymentFrequency": 10,
+            "meanTimeToRecovery": 2.5
+          }
+        },
+        {
+          "id": "rep-4",
+          "projectId": "proj-5",
+          "reportType": "milestone",
+          "title": "Project Completion Report",
+          "period": "2024-02",
+          "generatedAt": "2024-02-28T17:00:00Z",
+          "generatedBy": "John Anderson",
+          "summary": "Project completed successfully. All acceptance criteria met.",
+          "kpiSnapshot": {
+            "uptimePercent": 99.85,
+            "incidentResponseTimeHours": 2.5,
+            "rot": 0.25,
+            "firstTimeAcceptanceRate": 0.85,
+            "changeFailureRate": 0.10,
+            "deploymentFrequency": 12,
+            "meanTimeToRecovery": 2.0
+          }
+        }
+      ]
+    }
+  ],
+  "knowledgeItems": [
+    {
+      "id": "kb-1",
+      "title": "Cloud Migration Best Practices",
+      "type": "guide",
+      "category": "Cloud",
+      "tags": ["cloud", "migration", "aws", "azure"],
+      "description": "Comprehensive guide for planning and executing cloud migrations",
+      "markdownContent": "# Cloud Migration Best Practices\n\n## Pre-Migration Phase\n\n1. **Assessment**\n   - Inventory all applications and dependencies\n   - Identify migration candidates\n   - Assess technical debt\n\n2. **Planning**\n   - Define migration strategy (6 Rs)\n   - Create migration roadmap\n   - Establish success criteria\n\n## Migration Strategies\n\n- **Rehost**: Lift-and-shift\n- **Replatform**: Lift, tinker, and shift\n- **Refactor**: Re-architect for cloud-native\n- **Retire**: Decommission\n- **Retain**: Keep on-premises\n- **Repurchase**: Move to SaaS\n\n## Best Practices\n\n- Start with non-critical workloads\n- Automate where possible\n- Test thoroughly\n- Monitor continuously\n- Document everything",
+      "author": "John Anderson",
+      "lastUpdated": "2024-03-10T10:00:00Z",
+      "viewCount": 145,
+      "region": "Global"
+    },
+    {
+      "id": "kb-2",
+      "title": "Kubernetes Cluster Setup SOP",
+      "type": "sop",
+      "category": "Platform",
+      "tags": ["kubernetes", "devops", "containers"],
+      "description": "Standard operating procedure for setting up production Kubernetes clusters",
+      "contentUrl": "https://portal.example.com/docs/k8s-setup-sop.pdf",
+      "author": "Michael Rodriguez",
+      "lastUpdated": "2024-03-15T14:00:00Z",
+      "viewCount": 98,
+      "region": "Global"
+    },
+    {
+      "id": "kb-3",
+      "title": "Incident Response Runbook",
+      "type": "runbook",
+      "category": "Operations",
+      "tags": ["incidents", "operations", "troubleshooting"],
+      "description": "Step-by-step procedures for handling production incidents",
+      "markdownContent": "# Incident Response Runbook\n\n## Severity Levels\n\n### SEV-1: Critical\n- Production down or severely impacted\n- Response time: 15 minutes\n- Escalation: Immediate\n\n### SEV-2: High\n- Major feature unavailable\n- Response time: 1 hour\n- Escalation: Within 2 hours\n\n### SEV-3: Medium\n- Minor feature impacted\n- Response time: 4 hours\n- Escalation: Within 8 hours\n\n## Response Steps\n\n1. **Acknowledge**\n   - Acknowledge incident in monitoring system\n   - Join incident bridge\n   - Assign incident commander\n\n2. **Assess**\n   - Gather information\n   - Determine severity\n   - Identify affected systems\n\n3. **Mitigate**\n   - Implement immediate fixes\n   - Restore service if possible\n   - Communicate status\n\n4. **Resolve**\n   - Apply permanent fix\n   - Verify resolution\n   - Close incident\n\n5. **Post-Mortem**\n   - Document timeline\n   - Identify root cause\n   - Create action items",
+      "author": "Emily Watson",
+      "lastUpdated": "2024-03-18T11:00:00Z",
+      "viewCount": 203,
+      "region": "Global"
+    },
+    {
+      "id": "kb-4",
+      "title": "Security Assessment Checklist",
+      "type": "collateral",
+      "category": "Security",
+      "tags": ["security", "assessment", "compliance"],
+      "description": "Comprehensive security assessment checklist for client engagements",
+      "contentUrl": "https://portal.example.com/docs/security-checklist.pdf",
+      "author": "Emily Watson",
+      "lastUpdated": "2024-03-20T09:00:00Z",
+      "viewCount": 76,
+      "region": "Global"
+    },
+    {
+      "id": "kb-5",
+      "title": "AI/ML Model Deployment Guide",
+      "type": "documentation",
+      "category": "AI/ML",
+      "tags": ["ai", "ml", "deployment", "mlops"],
+      "description": "Guide for deploying and monitoring ML models in production",
+      "markdownContent": "# AI/ML Model Deployment Guide\n\n## Overview\n\nThis guide covers best practices for deploying machine learning models to production.\n\n## Deployment Options\n\n### 1. Batch Inference\n- Scheduled predictions\n- Large dataset processing\n- Lower latency requirements\n\n### 2. Real-time Inference\n- API endpoints\n- Low latency required\n- Individual predictions\n\n### 3. Edge Deployment\n- On-device inference\n- Offline capability\n- Privacy-focused\n\n## MLOps Pipeline\n\n1. **Model Training**\n   - Version training data\n   - Track experiments\n   - Save model artifacts\n\n2. **Model Validation**\n   - Test on holdout set\n   - A/B testing\n   - Shadow mode deployment\n\n3. **Model Serving**\n   - Containerize models\n   - Load balancing\n   - Auto-scaling\n\n4. **Monitoring**\n   - Track model performance\n   - Monitor data drift\n   - Alert on anomalies\n\n## Tools\n\n- MLflow for experiment tracking\n- Kubernetes for orchestration\n- Prometheus for monitoring\n- Grafana for visualization",
+      "author": "Sarah Chen",
+      "lastUpdated": "2024-03-12T15:00:00Z",
+      "viewCount": 132,
+      "region": "Global"
+    },
+    {
+      "id": "kb-6",
+      "title": "DevOps Toolchain Selection Guide",
+      "type": "guide",
+      "category": "DevOps",
+      "tags": ["devops", "tools", "cicd"],
+      "description": "Guide for selecting the right DevOps tools for your organization",
+      "contentUrl": "https://portal.example.com/docs/devops-toolchain.pdf",
+      "author": "Michael Rodriguez",
+      "lastUpdated": "2024-02-28T10:00:00Z",
+      "viewCount": 89,
+      "region": "Global"
+    }
+  ],
+  "tasks": []
+}

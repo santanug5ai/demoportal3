@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  # Backend API
+  api:
+    build:
+      context: ./services/portal-api
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - NODE_ENV=development
+      - JWT_SECRET=ob-digital-portal-secret-key-change-in-production
+    volumes:
+      - ./services/portal-api:/app
+      - ./data:/app/../../data
+      - /app/node_modules
+    command: npm run dev
+    networks:
+      - ob-portal
+
+  # Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:3001/api
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    command: npm run dev
+    depends_on:
+      - api
+    networks:
+      - ob-portal
+
+networks:
+  ob-portal:
+    driver: bridge

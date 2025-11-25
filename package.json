@@ -1,0 +1,25 @@
+{
+  "name": "ob-digital-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Digital Portal with automated BUY service workflows",
+  "workspaces": [
+    "frontend",
+    "services/portal-api",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:frontend\"",
+    "dev:api": "npm run dev --workspace=services/portal-api",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspaces --if-present",
+    "seed": "node scripts/seed.js",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
