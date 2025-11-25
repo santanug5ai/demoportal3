@@ -2,6 +2,17 @@
 
 A complete local monorepo implementing a Digital Portal with automated BUY service workflows and minimal manual updates. Everything runs on localhost with no cloud vendor dependencies.
 
+## 🚀 Live Demo
+
+**Frontend (GitHub Pages):** Coming soon after PR merge
+- URL: `https://santanug5ai.github.io/demoportal3`
+- The frontend is automatically deployed via GitHub Actions
+
+**Backend API:** Must run separately (see [Deployment Guide](DEPLOYMENT.md))
+- Options: Local development, Railway, Heroku, or your own server
+
+> **Note:** GitHub Pages can only host static frontend. The backend API must be deployed separately. See [DEPLOYMENT.md](DEPLOYMENT.md) for complete deployment instructions.
+
 ## Architecture
 
 This is a monorepo with the following structure:
